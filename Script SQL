@@ -96,7 +96,7 @@ CREATE TABLE OrdenCompra (
     fecha DATE NOT NULL,
     id_proveedor INT,
     id_estado INT,
-    FOREING KEY (id_estado) REFERENCES EstadoOrden(id_estado),
+    FOREIGN KEY (id_estado) REFERENCES EstadoOrden(id_estado),
     FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
 );
 
